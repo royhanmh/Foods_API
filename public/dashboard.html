@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mock Foods ID API</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./src/favicon/site.webmanifest" />
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <div id="myLinks">
+        <a href="#hero">Home</a>
+        <a href="#docs">Docs</a>
+        <a target="_blank" href="https://github.com/royhanmh/Foods_API"
+          >Github</a
+        >
+        <a href="#">Buy Me a Coffee</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="links">
+        <a href="#hero">Home</a>
+        <a href="#docs">Docs</a>
+        <a target="_blank" href="https://github.com/royhanmh/Foods_API"
+          >Github</a
+        >
+        <a href="#">Buy Me a Coffee</a>
+      </div>
+      <div class="logo">
+        <a href="your-logo-link-url.html">
+          <img src="./src/img/logo.png" alt="Logo" class="logo-image" />
+        </a>
+      </div>
+    </div>
+
+    <div id="hero" class="hero">
+      <div class="hero-left">
+        <img src="./src/img/banner.png" alt="Image" class="hero-image" />
+      </div>
+      <div class="hero-right">
+        <h2>Mock Foods ID</h2>
+        <p>
+          Mock Foods ID containing food items from Indonesia for your
+          application prototype.
+        </p>
+
+        <a href="#docs" class="hero-button">
+          <i class="fas fa-book"></i> View Docs
+        </a>
+        <a
+          target="_blank"
+          href="https://github.com/royhanmh/Foods_API"
+          class="hero-button"
+        >
+          <i class="fa-brands fa-github"></i> View Repos
+        </a>
+      </div>
+    </div>
+
+    <!-- New description div below text and image -->
+    <div class="description">
+      <h3>Description</h3>
+      <p>
+        This API provides a collection of delicious Indonesian foods, including
+        satay (sate), rendang, nasi goreng, and more. Use this API to develop
+        your culinary website or restaurant application and showcase the rich
+        flavors of Indonesian cuisine.
+      </p>
+    </div>
+
+    <div class="example" id="docs">
+      <h3>Example Using Axios</h3>
+      <div class="usage">
+        <h4>Get Foods</h4>
+        <div class="box">
+          <p>axios.get('<b>http://localhost:3002/foods</b>')</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Get Foods Using Limit & Sort</h4>
+        <div class="box">
+          <p>
+            axios.get('<b>http://localhost:3002/foods?limit=12&sort=desc</b>')
+          </p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Get Categories</h4>
+        <div class="box">
+          <p>axios.get('<b>http://localhost:3002/foods/categories</b>')</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Get Foods Category</h4>
+        <div class="box">
+          <p>axios.get('<b>http://localhost:3002/foods/category/entree</b>')</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Get Food by ID</h4>
+        <div class="box">
+          <p>axios.get('<b>http://localhost:3002/foods/1</b>')</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Post Food</h4>
+        <div class="box">
+          <p>axios.post('<b>http://localhost:3002/foods</b>', {</p>
+          <p class="indent">"name": "Nasi Goreng",</p>
+          <p class="indent">"category": "Main Dish",</p>
+          <p class="indent">
+            "description": "A popular Indonesian fried rice with a mix of
+            ingredients and spices.",
+          </p>
+          <p class="indent">"price": 10000,</p>
+          <p class="indent">"image": "nasi_goreng.gif"</p>
+          <p>})</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Edit Food</h4>
+        <div class="box">
+          <p>axios.put('<b>http://localhost:3002/foods/12</b>', {</p>
+          <p class="indent">"name": "Nasi Goreng",</p>
+          <p class="indent">"category": "Main Dish",</p>
+          <p class="indent">
+            "description": "A popular Indonesian fried rice with a mix of
+            ingredients and spices.",
+          </p>
+          <p class="indent">"price": 10000,</p>
+          <p class="indent">"image": "nasi_goreng.gif"</p>
+          <p>})</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="usage">
+        <h4>Delete Food</h4>
+        <div class="box">
+          <p>axios.delete('<b>http://localhost:3002/foods/1</b>')</p>
+          <p class="indent">
+            .then((response) => { console.log(response.data); })
+          </p>
+          <p class="indent">.catch((error) => { console.error(error); });</p>
+        </div>
+      </div>
+      <div class="note">
+        <p>
+          <strong>Note:</strong> Please be aware that all POST, PUT, and DELETE
+          routes
+          <u>do not add, update or delete food data from the database</u>.
+          Instead, they are designed to return a success message if the request
+          is made properly. The food data remains intact in the database for
+          reference and can be retrieved as needed.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Made by
+        <a class="link" target="_blank" href="https://www.github.com/royhanmh"
+          >@royhanmh</a
+        >
+      </p>
+    </div>
+
+    <a href="#top" class="scroll-to-top" title="Scroll to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script>
+      // Get the scroll-to-top button element
+      var scrollButton = document.querySelector(".scroll-to-top");
+
+      // Add a scroll event listener
+      window.addEventListener("scroll", function () {
+        // If the user has scrolled down 300 pixels, show the button
+        if (window.scrollY >= 300) {
+          scrollButton.style.display = "block";
+        } else {
+          // Otherwise, hide the button
+          scrollButton.style.display = "none";
+        }
+      });
+
+      // Smooth scroll to the top when the button is clicked
+      scrollButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js"
+      integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/solid.min.js"
+      integrity="sha512-s6yNeC6faUgveCQocceGXVia7ciAebyTH7hRNazwZa2FHhnxX22qaGeb9d3a8PUKdnoHo3T3bYI/0ZOjmgWkNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/brands.min.js"
+      integrity="sha512-IZeK0c+nwCpZdoWLUoguVYEnBOwOnS3eTyS5Eg57YCk41x2NphG1E/vSa886whDSXG7vGauI8mmbP5PI/VC5LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

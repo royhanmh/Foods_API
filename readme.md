@@ -106,4 +106,4 @@ If you'd like to contribute to the Mock Foods API project, please follow these s
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

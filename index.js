@@ -6,14 +6,10 @@ const path = require("path");
 app.use(express.json());
 app.use(express.static("public"));
 app.use(cors());
-// connectDB();
-// const dashboardRoute = require("./routes/dashboard"); // Import the dashboard route module
-const foodsRoute = require("./routes/foods"); // Import the foods route module
-// const categoriesRoute = require("./routes/categories");
 
-// app.use('/dashboard', dashboardRoute); // Use the dashboard route
-app.use("/foods", foodsRoute); // Use the foods route
-// app.use("/categories", categoriesRoute); // Use the categories route
+const foodsRoute = require("./routes/foods");
+
+app.use("/foods", foodsRoute);
 
 app.use("/images", (req, res) => {
   const requestedImage = req.url.slice(1);
@@ -26,9 +22,7 @@ app.use("/images", (req, res) => {
   });
 });
 
-// Define a route to serve the dashboard
 app.get("/dashboard", (req, res) => {
-  // Use path to locate the dashboard.html file
   res.sendFile(path.join(__dirname, "public/dashboard.html"));
 });
 

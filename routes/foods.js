@@ -99,7 +99,7 @@ router.get("/", async (req, res) => {
     .find(filter)
     .select("-__v")
     .limit(limit)
-    .sort(sort ? { name: sortOrder } : null); // Sort only if the 'sort' parameter is provided
+    .sort(sort ? { name: sortOrder } : null);
 
   res.json({ message: "Food Retrieved successfully", data: result });
 });

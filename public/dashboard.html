@@ -76,7 +76,6 @@
       </div>
     </div>
 
-    <!-- New description div below text and image -->
     <div class="description">
       <h3>Description</h3>
       <p>
@@ -215,21 +214,16 @@
     </a>
 
     <script>
-      // Get the scroll-to-top button element
       var scrollButton = document.querySelector(".scroll-to-top");
 
-      // Add a scroll event listener
       window.addEventListener("scroll", function () {
-        // If the user has scrolled down 300 pixels, show the button
         if (window.scrollY >= 300) {
           scrollButton.style.display = "block";
         } else {
-          // Otherwise, hide the button
           scrollButton.style.display = "none";
         }
       });
 
-      // Smooth scroll to the top when the button is clicked
       scrollButton.addEventListener("click", function (e) {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: "smooth" });

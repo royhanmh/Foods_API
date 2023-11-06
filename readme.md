@@ -70,7 +70,7 @@ Here's how you can use Axios to interact with the API:
 
 ```javascript
 axios
-  .get("http://localhost:3002/foods")
+  .get("https://mockfoods.cyclic.app/foods")
   .then((response) => {
     console.log(response.data);
   })

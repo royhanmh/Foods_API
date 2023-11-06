@@ -91,7 +91,7 @@
       <div class="usage">
         <h4>Get Foods</h4>
         <div class="box">
-          <p>axios.get('<b>http://localhost:3002/foods</b>')</p>
+          <p>axios.get('<b>https://mockfoods.cyclic.app/foods</b>')</p>
           <p class="indent">
             .then((response) => { console.log(response.data); })
           </p>
@@ -102,7 +102,7 @@
         <h4>Get Foods Using Limit & Sort</h4>
         <div class="box">
           <p>
-            axios.get('<b>http://localhost:3002/foods?limit=12&sort=desc</b>')
+            axios.get('<b>https://mockfoods.cyclic.app/foods?limit=12&sort=desc</b>')
           </p>
           <p class="indent">
             .then((response) => { console.log(response.data); })
@@ -113,7 +113,9 @@
       <div class="usage">
         <h4>Get Categories</h4>
         <div class="box">
-          <p>axios.get('<b>http://localhost:3002/foods/categories</b>')</p>
+          <p>
+            axios.get('<b>https://mockfoods.cyclic.app/foods/categories</b>')
+          </p>
           <p class="indent">
             .then((response) => { console.log(response.data); })
           </p>
@@ -123,7 +125,9 @@
       <div class="usage">
         <h4>Get Foods Category</h4>
         <div class="box">
-          <p>axios.get('<b>http://localhost:3002/foods/category/entree</b>')</p>
+          <p>
+            axios.get('<b>https://mockfoods.cyclic.app/foods/category/entree</b>')
+          </p>
           <p class="indent">
             .then((response) => { console.log(response.data); })
           </p>
@@ -133,7 +137,7 @@
       <div class="usage">
         <h4>Get Food by ID</h4>
         <div class="box">
-          <p>axios.get('<b>http://localhost:3002/foods/1</b>')</p>
+          <p>axios.get('<b>https://mockfoods.cyclic.app/foods/1</b>')</p>
           <p class="indent">
             .then((response) => { console.log(response.data); })
           </p>
@@ -143,7 +147,7 @@
       <div class="usage">
         <h4>Post Food</h4>
         <div class="box">
-          <p>axios.post('<b>http://localhost:3002/foods</b>', {</p>
+          <p>axios.post('<b>https://mockfoods.cyclic.app/foods</b>', {</p>
           <p class="indent">"name": "Nasi Goreng",</p>
           <p class="indent">"category": "Main Dish",</p>
           <p class="indent">
@@ -162,7 +166,7 @@
       <div class="usage">
         <h4>Edit Food</h4>
         <div class="box">
-          <p>axios.put('<b>http://localhost:3002/foods/12</b>', {</p>
+          <p>axios.put('<b>https://mockfoods.cyclic.app/foods/12</b>', {</p>
           <p class="indent">"name": "Nasi Goreng",</p>
           <p class="indent">"category": "Main Dish",</p>
           <p class="indent">
@@ -181,7 +185,7 @@
       <div class="usage">
         <h4>Delete Food</h4>
         <div class="box">
-          <p>axios.delete('<b>http://localhost:3002/foods/1</b>')</p>
+          <p>axios.delete('<b>https://mockfoods.cyclic.app/foods/1</b>')</p>
           <p class="indent">
             .then((response) => { console.log(response.data); })
           </p>

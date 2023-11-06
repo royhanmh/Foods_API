@@ -2,6 +2,8 @@
 
 Welcome to the Mock Foods API documentation. This API provides a collection of delicious Indonesian foods, including satay (sate), rendang, nasi goreng, and more. Use this API to develop your culinary website or restaurant application and showcase the rich flavors of Indonesian cuisine.
 
+**Website**: [Mock Foods Dashboard](https://mockfoods.cyclic.app/dashboard
+
 ## Table of Contents
 
 - [API Endpoints](#api-endpoints)

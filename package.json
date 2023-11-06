@@ -4,7 +4,7 @@
   "description": "Public API that Serves Indonesian Foods",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node index.js",
     "dev": "nodemon app.js"
   },
   "author": "royhanmh",

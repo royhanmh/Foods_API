@@ -15,7 +15,7 @@ app.use("/images", (req, res) => {
   const requestedImage = req.url.slice(1);
   fs.access(path.join(__dirname, "images", requestedImage), (err) => {
     if (err) {
-      res.sendFile(path.join(__dirname, "images", "noImage.jpg"));
+      res.sendFile(path.join(__dirname, "images", "no_image.jpg"));
     } else {
       res.sendFile(path.join(__dirname, "images", requestedImage));
     }
